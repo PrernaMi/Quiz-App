@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz_app_final/quiz.dart';
 import 'package:quiz_app_final/start_Screen.dart';
 
 void main(){
@@ -42,7 +43,7 @@ class _DashBoardState extends State<DashBoardScreen>{
             colors: [Colors.purple.shade900,Colors.purple.shade800,Colors.purple.shade700],
           )
         ),
-        child: const start_Screen(),
+        child: Quiz(),
       ),
     );
   }

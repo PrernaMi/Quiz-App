@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class start_Screen extends StatelessWidget{
-  const start_Screen({super.key});
+   start_Screen(this.Quiz_fun,{super.key});
+
+   void Function ()Quiz_fun;
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +19,11 @@ class start_Screen extends StatelessWidget{
         const SizedBox(
           height: 80,
         ),
-        ElevatedButton.icon(onPressed: (){
-
-        }, icon: const Icon(Icons.arrow_forward),
+        ElevatedButton.icon(onPressed: Quiz_fun,
+          icon: const Icon(Icons.arrow_forward),
           label: const Text("Start Quiz"),
         )
       ],
     );
   }
-
 }
